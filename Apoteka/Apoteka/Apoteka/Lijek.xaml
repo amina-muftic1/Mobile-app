@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Apoteka.Lijek"
+             BackgroundImageSource="pozadina.jpeg">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame BackgroundColor="White" HeightRequest="160" WidthRequest="160">
+                    <Image x:Name="SlikaLijeka" HeightRequest="150" WidthRequest="150"/>
+                    </Frame>
+                    <Frame CornerRadius="30" BorderColor="Black" Padding="20" Margin="0,-30,0,0">
+                    <StackLayout BackgroundColor="AliceBlue" Padding="10">
+                        <Label x:Name="NazivLijeka" HorizontalOptions="CenterAndExpand"  
+                               FontSize="40" FontAttributes="Bold" TextDecorations="Underline" TextColor="ForestGreen"/>
+                        <Label x:Name="CijenaLijeka" Text="CIJENA: " FontSize="18" Margin="0,10,0,0" TextColor="Black"/>
+                        <Label x:Name="OpisLijekova" Text="OPIS LIJEKA: " FontSize="18" TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+                <Button Text="Naruči" FontSize="15" TextColor="AliceBlue" FontAttributes="Bold" BackgroundColor="Green" 
+                        Margin="70,-30,70,0" CornerRadius="50" Clicked="Button_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

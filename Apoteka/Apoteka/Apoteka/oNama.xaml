@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Apoteka.oNama"
+            BackgroundColor="AliceBlue">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="af.jpg" Aspect="AspectFill"/>
+            <StackLayout>
+                <Frame BorderColor="Green" BackgroundColor="AliceBlue" Margin="40,-30">
+                    <Label Text=" Apoteka PharC ima za cilj da korisnicima usluga:  
+                           ponudi uslugu online farmaceuta olakša pristup informacijama o određenim preparatima, pruži informacije o cijeni proizvoda, omogući online naručivanje preparata, kao i da korisnika usluga: poštedi svih neprijatnosti vezanih za narušavanje privatnosti, a koje su posledica kupovine u punoj apoteci  poštedi Vas traženja preparata po raznim lokacijama, čekanja u redovima, itd.." TextColor="Green" FontSize="17" />
+                </Frame>
+                <Label  Text="Kontakt telefon" FontSize="30" HorizontalOptions="Center" Margin="0,40,0,0" TextDecorations="Underline" TextColor="Green"/>
+                <Label Text="060/000-000" FontSize="35" HorizontalOptions="Center" TextColor="Green" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

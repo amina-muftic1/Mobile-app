@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Apoteka.Lokacije"
+           BackgroundColor="AliceBlue"
+            >
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="oi.jpg" Aspect="AspectFill" WidthRequest="200" HeightRequest="200" />
+            <StackLayout>
+            <Frame BackgroundColor="AliceBlue" HorizontalOptions="FillAndExpand" 
+                   Margin="30,-50,30,0" BorderColor="Green">
+                <Label Text="Potražite nas na sljedećim lokacijama:" FontSize="25" 
+                       TextColor="Green" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" 
+                       Padding="10,0,0,0"/>
+            </Frame>
+                <StackLayout Margin="50,20,50,0">
+                    <Button Text="Lokacija 1" Clicked="Button_Clicked" TextColor="AliceBlue" 
+                           FontSize="20" BackgroundColor="Green" CornerRadius="40" Margin="30,10,30,10"/>
+                    <Button Text="Lokacija 2" Clicked="Button_Clicked_1" TextColor="AliceBlue"
+                            FontSize="20" BackgroundColor="Green" CornerRadius="40" Margin="30,10,30,10" />
+                </StackLayout>
+        </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

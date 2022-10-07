@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Apoteka.Katalog"
+             BackgroundColor="AliceBlue">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame Margin="20" BorderColor="Black"  CornerRadius="50"  HeightRequest="25"  WidthRequest="25"
+               IsClippedToBounds="True" HorizontalOptions="Center"  VerticalOptions="Center">
+                    <Image Source="pharmacy.jpg" Aspect="AspectFill"  Margin="-20"  HeightRequest="35"  WidthRequest="35"/>
+                </Frame>
+                <ListView x:Name="lst" ItemsSource="{Binding Lijek}" ItemSelected="lst_ItemSelected" HasUnevenRows="True" SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Padding="10" BackgroundColor="ForestGreen">
+                                <Frame CornerRadius="20" HasShadow="True">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="{Binding ImageURL}" WidthRequest="100"/>
+                                        <StackLayout>
+                                            <Label Text="{Binding Naziv}" FontSize="25" TextColor="ForestGreen" FontAttributes="Bold"/>
+                                            <Label Text="{Binding Cijena}"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

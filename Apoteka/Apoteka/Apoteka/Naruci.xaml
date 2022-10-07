@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Apoteka.Naruci"
+             BackgroundImageSource="pozadina.jpeg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="AliceBlue" Margin="0,35,0,5" BorderColor="Green">
+                <Label Text="Popunite prazna polja" HorizontalOptions="Center" TextColor="Green" 
+                       FontSize="30" TextDecorations="Underline"/>
+            </Frame>
+            <StackLayout Padding="40">
+                <Frame BackgroundColor="aliceblue" Margin="0,-29,0,50" BorderColor="Green">
+                    <TableView>
+                        <TableRoot>
+                            <TableSection>
+                                <EntryCell x:Name="ime" Label="Ime"/>
+                                <EntryCell x:Name="prezime" Label="Prezime"/>
+                                <EntryCell x:Name="brojTelefona" Label="Broj telefona " Keyboard="Telephone"/>
+                                <EntryCell x:Name="adresa" Label="Adresa stanovanja" />
+
+                            </TableSection>
+                        </TableRoot>
+                    </TableView>
+                </Frame>
+                <Button Text="Zaključi narudžbu" Clicked="Button_Clicked" Margin="40,-80,40,0" CornerRadius="40" 
+                        BackgroundColor="Green" FontSize="17" BorderWidth="4" TextColor="AliceBlue"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

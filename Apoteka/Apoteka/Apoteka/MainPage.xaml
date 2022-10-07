@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Apoteka.MainPage"
+             BackgroundColor="AliceBlue">
+
+    <StackLayout>
+        <Image Source="slika1.jpg" WidthRequest="200" HeightRequest="200"
+               Aspect="AspectFill"/>
+        <StackLayout>
+        <Frame Margin="20,-40,20,20"  BorderColor="Black"  CornerRadius="50" 
+               HeightRequest="120" WidthRequest="120" IsClippedToBounds="True"  
+               HorizontalOptions="Center"  VerticalOptions="Center">
+            <Image Source="pharmacy.jpg" Aspect="AspectFill" 
+                   Margin="-20"  HeightRequest="120" WidthRequest="120"/>
+        </Frame>
+        <Label Text="Apoteka PharC" TextColor="Green" FontAttributes="Italic" 
+               FontSize="55" HorizontalOptions="Center" 
+               VerticalOptions="Center" Margin="25,10,25,25"/>
+        <Frame BackgroundColor="ForestGreen"  />
+        <Button  Text="Kupi lijek" FontSize="20" TextColor="ForestGreen" 
+                 FontAttributes="Bold" BackgroundColor="AliceBlue"
+                 BorderColor="ForestGreen" BorderWidth="2" CornerRadius="35" 
+                 Margin="60,-35,60,0" Clicked="Btn_pocetna_stranica"/>
+    </StackLayout>
+    </StackLayout>
+</ContentPage>
